@@ -14,7 +14,7 @@ end
 
 * Run `bundle install`
 
-## Setup the spec folder:
+## Setup the Spec Folder:
 `rails generate rspec:install`
 
 ## Create Model:
@@ -26,5 +26,8 @@ end
 ## Create Model Specs (this may have been setup during the model creation):
 `rails g rspec:model book`
 
-## Create the controller:
+## Create the Controller:
 `rails g controller books`
+
+## Create Controller Specs (this may have been setup during the controller creation):
+`rails g rspec:controller books`
