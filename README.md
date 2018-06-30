@@ -22,3 +22,6 @@ end
 
 ## Run Migration:
 `rails db:migrate`
+
+## Create Model Specs (this may have been setup during the model creation):
+`rails g rspec:model book`
