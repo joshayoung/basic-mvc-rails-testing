@@ -16,3 +16,9 @@ end
 
 ## Setup the spec folder:
 `rails generate rspec:install`
+
+## Create Model:
+`rails g model books title:string word_count:string description:text`
+
+## Run Migration:
+`rails db:migrate`
