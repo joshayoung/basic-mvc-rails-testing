@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project includes some basic Ruby on Rails model, controller, and feature tests.
 
-Things you may want to cover:
+## Initial Setup:
+* `rails new basic-mvc-rails-testing -T`
 
-* Ruby version
+## Add rsepc to your gemfile:
+`
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+end
+`
 
-* System dependencies
+* Run `bundle install`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup the spec folder:
+`rails generate rspec:install`
