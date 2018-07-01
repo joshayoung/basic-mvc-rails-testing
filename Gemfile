@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.3'
@@ -56,4 +56,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'capybara'
 end
+
+ gem 'simplecov', require: false, group: :test

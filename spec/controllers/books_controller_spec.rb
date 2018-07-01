@@ -57,10 +57,6 @@ RSpec.describe BooksController, type: :controller do
 private
 
   def book_attributes
-    Book.create!(
-      title: "Gone with the Wind",
-      word_count: "418053",
-      description: "A famous novel."
-    )
+    create(:book)
   end
 end
