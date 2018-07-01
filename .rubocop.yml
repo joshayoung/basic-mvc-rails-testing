@@ -3,3 +3,11 @@ Style/StringLiterals:
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*.rb"
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+Layout/LeadingCommentSpace:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
