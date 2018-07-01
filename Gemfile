@@ -62,3 +62,7 @@ group :development, :test do
 end
 
  gem 'simplecov', require: false, group: :test
+
+ group :development, :test do
+  gem 'jazz_hands'
+end
