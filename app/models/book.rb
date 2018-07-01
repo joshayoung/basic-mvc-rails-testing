@@ -7,6 +7,7 @@ class Book < ApplicationRecord
     def antiques
       where(antique: true)
     end
+
     def recent
       where(antique: false)
     end
