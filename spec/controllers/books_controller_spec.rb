@@ -2,9 +2,16 @@ require 'rails_helper'
 
 RSpec.describe BooksController, type: :controller do
   context "GET #index" do
+      render_views
     it "returns http success" do
       get :index
       response.successful?
+    end
+
+    it "shows a list of books" do
+      total = Book.all.count
+      get :index
+      expect(response.body).to match total.to_s
     end
   end
 
@@ -33,7 +40,8 @@ RSpec.describe BooksController, type: :controller do
 
   context "POST #create" do
     it "returns http success" do
-      post :create
+      book = book_attributes
+      post :create, params: { book: { title: book.title, word_cont: book.word_count, description: book.description } }
       response.successful?
     end
   end
@@ -41,7 +49,7 @@ RSpec.describe BooksController, type: :controller do
   context "PATCH #update" do
     it "returns http success" do
       book = book_attributes
-      patch :update, params: { id: book.to_param }
+      patch :update, params: { id: book, book: { title: book.title, word_cont: book.word_count, description: book.description } }
       response.successful?
     end
   end
