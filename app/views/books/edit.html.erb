@@ -1,0 +1,7 @@
+<%= render "shared/errors" %>
+<%= simple_form_for @book do |f| %>
+  <%= f.input :title, label: "Title" %>
+  <%= f.input :word_count, label: "Word Count" %>
+  <%= f.input :description, as: :text, label: "Description" %>
+  <%= f.button :submit %>
+<% end %>

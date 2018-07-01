@@ -1,0 +1,5 @@
+<h1><%= @book.title %></h1>
+<p><%= @book.word_count %></p>
+<p><%= @book.description %></p>
+
+<%= link_to "Delete", @book, method: :delete, data: { confirm: "Click 'OK' to delete this record." } %>
