@@ -66,3 +66,5 @@ end
  group :development, :test do
   gem 'jazz_hands'
 end
+
+gem 'simple_form'
